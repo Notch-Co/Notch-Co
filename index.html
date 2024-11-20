@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notch | Home</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM%20Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">  
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/main-style.css">
+    <script src="js/home.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.PNG">
+</head>
+<body>
+    <header>
+        <img id="header-logo" src="images/logo-copy.PNG" alt="logo">
+    </header>
+    <div class="icon-container">
+        <img class="icon" id="menu-icon" src="images/menu-icon.png" alt="three line icon">
+        <a href="index.html"><img  class="icon" id="home-icon" src="images/home-icon.png" alt="home icon"></a>
+    </div>
+    <nav id="nav" class="fixed-element centered-nav">
+        <img id="logo" class="hidden" src="images/logo.PNG" alt="logo">
+        <ul>
+            <li><a class="final-link" href="faq.html">FAQ</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li class="dropdown">
+                <a class="dropbtn" href="about.html">About</a>
+                <ul class="dropdown-content">
+                    <!-- When writing html for about page, add the text after the # as an id on the respective header-->
+                    <li><a href="about.html#our-objective">Our Objective</a></li>
+                    <li class="submenu">
+                        <span class="dropdown-subheading">About NotchPen</span>
+                        <ul class="article-list">
+                            <li><a href="Article-How-NotchPen-Works.html">How NotchPen Works</a></li>
+                            <li><a href="Article-Is-NotchPen-for-You.html">Is NotchPen for You?</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html#testimonies">Testimonies</a></li>
+                    <li><a href="about.html#meet-the-team">Meet the Team</a></li>
+                    <li><a href="about.html#contact-us">Contact Us</a></li>
+                </ul>
+            </li>
+            <li><a class="current" href="index.html">Home</a></li>  <!-- change which link has the current class depending on page -->
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="main-idea">
+            <div class="heading"><h1>Why Our Pen Stands Out:</h1> <h1 class="second-color-heading">&NonBreakingSpace;Revolutionizing Writing for the Visually Impaired</h1></div>
+            <p>
+                In a world where writing tools have largely remained unchanged, our revolutionary pen emerges as a beacon of innovation, 
+                especially designed for the visually impaired. 
+            </p>
+            <p>
+                Unlike traditional pens, our product doesn't just write; it brings words to life in a tactile form, 
+                making it a groundbreaking tool in accessibility.
+            </p> 
+        </div>
+        <img class="product-img" src="images/diagram-with-product.png">
+        <h1 id="why-pen">Why Choose Our Pen?</h1>
+        <div class="textbox">
+            <h2>Enhanced Accessibility</h2>
+            <p>
+                Traditional braille writing methods require puncturing paper, which can be limiting to customers. 
+                Our pen simplifies this process, allowing users to 'print' braille smoothly and effortlessly.
+            </p>
+        </div>
+        <div class="textbox">
+            <h2>Innovative Design</h2>
+            <p>
+                Designed with the user in mind, our pen is ergonomic, easy to handle, and requires minimal pressure, 
+                making it suitable for all ages and abilities.
+            </p>
+        </div>
+        <div class="textbox">
+            <h2>Eco-Friendly and Cost-Effective</h2>
+            <p>
+                Unlike conventional braille writers that necessitate specific paper types, our pen works with more
+                affordable paper options, reducing long-term costs and environmental impact.
+            </p>
+        </div>
+        <div class="textbox">
+            <h2>Education and Independence</h2>
+            <p>
+                This pen isn't just a tool for writing; It enables users to learn, create, and communicate more effectively, 
+                breaking down barriers faced by the visually impaired community.
+            </p>
+        </div>
+        <div class="main-idea">
+            <div class="heading"><h1 class="second-color-heading">Join Us</h1><h1>&NonBreakingSpace;in Embracing Inclusivity!</h1></div>
+            <p>By choosing our pen, you're not just buying a writing instrument; you're supporting a movement towards greater inclusivity and empowerment for the visually impaired. </p> 
+            <p>Experience the transformation in how braille is written and perceived. Be a part of this revolutionary journey with us.</p>
+        </div>
+    </div>
+    <div class="testimonial-container">
+        <div class="testimonial">
+            <p>"This innovative pen has transformed the way I write and read braille. It's easy to use and incredibly effective."</p>
+            <p>- Zabi, Teacher</p>
+        </div>
+        <div class="testimonial">
+            <p>"As someone who is visually impaired, this pen has given me a newfound sense of independence in my daily life."</p>
+            <p>- Rayan, Student</p>
+        </div>
+        <div class="testimonial">
+            <p>"Absolutely a game-changer for braille users. The quality and ease of use are unmatched."</p>
+            <p>- Moustapha, Writer</p>
+        </div>
+    </div>
+    <a href="javascript:void(0);" id="backToTopButton" title="Back to Top" style="display: none;">↑</a>
+
+    <footer class="main-override">
+        <div>
+            <h1>Contact Us.</h1>
+            <p>
+              At Notch, we're here to help and hear from you.</br>
+              Your feedback, questions, and inquiries are</br>
+              important to us. Feel free to get in touch using</br>
+              the following methods:</p>
+            <!--<img src="images/destination.png" alt="location" width="20" height="30" style="margin-right: 50%;">-->
+        </div>
+    
+        <div>
+            <div class="contact-row">
+              <div class="contact-box">
+                <p><b>Address</b></br>
+                    Notch Headquarters</br>
+                    456 Inclusivity Street</br>
+                    Accessibility Town, Mapleland M1A 2B3</br>
+                    Canada</p>
+              </div>
+              <div class="contact-box">
+                <p><b>General Inquiries</b></br>
+                      Toll-Free: 225-587-3733</br>
+                      Phone: 225-587-4373</br>
+                      Fax: 225-587-7263</br>
+                      Email: info@notchco.com</p>
+              </div>
+              <div class="contact-box">
+                <p><b>Social Media</b></br>
+                    Instagram: @notchco</br>
+                    Facebook: @notch.co</br>
+                    Twitter: @notch_co</p>
+              </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

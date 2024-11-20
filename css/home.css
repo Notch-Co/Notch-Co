@@ -1,0 +1,85 @@
+.main{
+    margin: 5% 10% auto 10%;
+    text-align: center;
+}
+
+.testimonial-container {
+    margin: auto 10%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.testimonial {
+    background-color: #DFF3FF;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: 30%; 
+    text-align: center;
+}
+
+div.main-idea{
+    min-height: calc(100vh - 54px);
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1{
+    display: inline;
+}
+
+.second-color-heading{
+    color: #246365;
+}
+
+.main-idea .heading{
+    margin-bottom: 50px;
+}
+
+.main-idea p, .textbox p{
+    width: 67%;
+    text-align: justify;
+}
+
+#why-pen{
+    margin: 100px auto 50px auto;
+}
+
+div.textbox{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-img{
+    max-width: 100%;
+}
+
+/* specifying behaviour when on phone size screen */
+@media screen and (max-width: 600px){
+    .main{
+        margin: 5% 5% auto 5%;
+        text-align: center;
+    }
+
+    .testimonial-container {
+        margin: auto 5%;
+        flex-direction: column;
+    }
+    
+    .testimonial {
+        width: 90%;
+    }
+
+    .main-idea p, .textbox p{
+        width: 90%;
+    }
+}
+    

@@ -1,0 +1,108 @@
+<!--This file contains sample html for elements that can be reused across pages including nav bar and buttons-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Style</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM%20Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="css/main-style.css">
+    <script src="js/main.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.PNG">
+</head>
+<body>
+    <!-- copy and paste this into the body of each page -->
+    <!-- starting from this line -->
+    <header>
+        <img id="header-logo" src="images/logo-copy.PNG" alt="logo">
+    </header>
+    <div class="icon-container">
+        <img class="icon" id="menu-icon" src="images/menu-icon.png" alt="three line icon">
+        <a href="index.html"><img  class="icon" id="home-icon" src="images/home-icon.png" alt="home icon"></a>
+    </div>
+    <nav id="nav" class="fixed-element centered-nav">
+        <img id="logo" class="hidden" src="images/logo.PNG" alt="logo">
+        <ul>
+            <li><a class="final-link" href="faq.html">FAQ</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li class="dropdown">
+                <a class="dropbtn" href="about.html">About</a>
+                <ul class="dropdown-content">
+                    <!-- When writing html for about page, add the text after the # as an id on the respective header-->
+                    <li><a href="about.html#our-objective">Our Objective</a></li>
+                    <li class="submenu">
+                        <span class="dropdown-subheading">About NotchPen</span>
+                        <ul class="article-list">
+                            <li><a href="Article-How-NotchPen-Works.html">How NotchPen Works</a></li>
+                            <li><a href="Article-Is-NotchPen-for-You.html">Is NotchPen for You?</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html#testimonies">Testimonies</a></li>
+                    <li><a href="about.html#meet-the-team">Meet the Team</a></li>
+                    <li><a href="about.html#contact-us">Contact Us</a></li>
+                </ul>
+            </li>
+            <li><a class="current" href="index.html">Home</a></li>  <!-- change which link has the current class depending on page -->
+        </ul>
+    </nav>
+    <!-- to this line -->
+    <div style="margin-top: 150px;">
+        <h1>Header</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Vivamus pharetra consequat ligula, sit amet mattis mi ultricies vel. 
+            Praesent sollicitudin a augue vel interdum. 
+            Quisque quis metus quis nisl accumsan facilisis. 
+            Maecenas tempus et urna a venenatis. Etiam eget varius nibh. 
+            Fusce bibendum faucibus dignissim. Suspendisse ac sapien ante
+            <br> <br>
+            <a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank">Test Link</a>
+            <br> <br>
+            <!--a with class button will always format into a button-->
+            <a class="button" href="https://en.wikipedia.org/wiki/Main_Page" target="_blank">Test Button</a>
+        </p>
+
+        <p>
+            <br><br>
+            This is filler text
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Vivamus pharetra consequat ligula, sit amet mattis mi ultricies vel. 
+            Praesent sollicitudin a augue vel interdum. 
+            Quisque quis metus quis nisl accumsan facilisis. 
+            Maecenas tempus et urna a venenatis. Etiam eget varius nibh. 
+            Fusce bibendum faucibus dignissim. Suspendisse ac sapien ante
+            <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Vivamus pharetra consequat ligula, sit amet mattis mi ultricies vel. 
+            Praesent sollicitudin a augue vel interdum. 
+            Quisque quis metus quis nisl accumsan facilisis. 
+            Maecenas tempus et urna a venenatis. Etiam eget varius nibh. 
+            Fusce bibendum faucibus dignissim. Suspendisse ac sapien ante
+            <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Vivamus pharetra consequat ligula, sit amet mattis mi ultricies vel. 
+            Praesent sollicitudin a augue vel interdum. 
+            Quisque quis metus quis nisl accumsan facilisis. 
+            Maecenas tempus et urna a venenatis. Etiam eget varius nibh. 
+            Fusce bibendum faucibus dignissim. Suspendisse ac sapien ante
+            <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Vivamus pharetra consequat ligula, sit amet mattis mi ultricies vel. 
+            Praesent sollicitudin a augue vel interdum. 
+            Quisque quis metus quis nisl accumsan facilisis. 
+            Maecenas tempus et urna a venenatis. Etiam eget varius nibh. 
+            Fusce bibendum faucibus dignissim. Suspendisse ac sapien ante
+            <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Vivamus pharetra consequat ligula, sit amet mattis mi ultricies vel. 
+            Praesent sollicitudin a augue vel interdum. 
+            Quisque quis metus quis nisl accumsan facilisis. 
+            Maecenas tempus et urna a venenatis. Etiam eget varius nibh. 
+            Fusce bibendum faucibus dignissim. Suspendisse ac sapien ante
+            <br><br>
+        </p>
+    </div>
+</body>
+</html>

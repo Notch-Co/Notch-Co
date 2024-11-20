@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notch | Frequently Asked Questions</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM%20Sans">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="css/main-style.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/faq.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.PNG">
+  <script defer src="js/faq.js"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/about.js"></script>
+  <script defer src="js/home.js"></script>
+</head>
+<body>
+  <header>
+    <img id="header-logo" src="images/logo-copy.PNG" alt="logo">
+  </header>
+  <div class="icon-container">
+      <img class="icon" id="menu-icon" src="images/menu-icon.png" alt="three line icon">
+      <a href="index.html"><img  class="icon" id="home-icon" src="images/home-icon.png" alt="home icon"></a>
+  </div>
+  <nav id="nav" class="fixed-element centered-nav">
+      <img id="logo" class="hidden" src="images/logo.PNG" alt="logo">
+      <ul>
+          <li><a class="final-link current" href="faq.html">FAQ</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li class="dropdown">
+              <a class="dropbtn" href="about.html">About</a>
+              <ul class="dropdown-content">
+                  <!-- When writing html for about page, add the text after the # as an id on the respective header-->
+                  <li><a href="about.html#our-objective">Our Objective</a></li>
+                  <li class="submenu">
+                      <span class="dropdown-subheading">About NotchPen</span>
+                      <ul class="article-list">
+                          <li><a href="Article-How-NotchPen-Works.html">How NotchPen Works</a></li>
+                          <li><a href="Article-Is-NotchPen-for-You.html">Is NotchPen for You?</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="about.html#testimonies">Testimonies</a></li>
+                  <li><a href="about.html#meet-the-team">Meet the Team</a></li>
+                  <li><a href="about.html#contact-us">Contact Us</a></li>
+              </ul>
+          </li>
+          <li><a href="index.html">Home</a></li>  <!-- change which link has the current class depending on page -->
+      </ul>
+  </nav>
+
+  <div class="blue-container">
+    <h1>How can we help you?</h1>
+    <div class="search-form">
+      <form action="/search" method="get">
+        <input type="text" id="search" name="q" placeholder="Search keywords or phrases..."> <button class="override" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+  <div class="center-container"></div>
+  <h2>Frequently Asked Questions</h2>
+ 
+  <button id="refund-button" class="accordion">Refunds/Returns?</button>
+  <div class="panel" id="refund-box">
+    <p>Yes we offer refunds.</p>
+    <p>Customers have up to 30 days to return an item purchased from our website. After the return, refunds will be processed within 3-5 days.</p>
+  </div>  
+
+  <button id="shipping-button" class="accordion">Shipping?</button>
+  <div class="panel" id="shipping-box">
+    <p>We currently ship to all major cities in Canada, the United States, and the European Union.</p>
+    <p>Shipping is free on orders of over 100 CAD. On order below that value, shipping will be caluclated at checkout.
+      Costs may vary depending on your location.
+    </p>
+  </div>
+
+  <button id="features-button" class="accordion">What are the pens features?</button>
+  <div class="panel" id="features-box">
+      <p>The 3D pen is made to be versatile and easy to use.</p>
+      <p>Special features consist of a retractable tip, two buttons to accomodate grip, and adjustable temperature to control dispensinging rate of the wax.</p>
+  </div>
+     
+ <button id="functionality-button" class="accordion">How does the 3D pen work?</button>
+ <div class="panel" id="functionality-box">
+      <p>The 3D pen releases wax onto the page to create 3D patterns.</p>
+      <p>This can be used to write braille or letters that can be felt on the paper, allowing the user to read by touch.</p>
+  </div>
+
+
+  <div class="container" >
+    <div class="header" >
+        <h4>An issue, a question?<br>Do not hesitate to use this form to discuss with us!</h4>
+    </div>
+    <form class="form" id="form" action="/page-processing-data" method="post">
+        <div class="form-control">
+            <label for="name">Your name</label>
+            <input type="text" id="username" name="username" placeholder="Your name..." required>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation"></i>
+            <small>Message d'erreur</small>
+        </div>
+        <div class="form-control">
+            <label for="email">Your e-mail</label>
+            <input type="email" id="email" name="email" placeholder="myemailadresse@gmail.com" required>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation"></i>
+            <small>Message d'erreur</small>
+        </div>
+        <div class="form-control">
+            <label for="subject">What is the subject of your message ?</label>
+            <select name="subject" id="subject" required>
+                <option value="" disabled selected hidden>Select the subject of your message</option>
+                <option value="question-product">Question about product?</option>
+                <option value="review">Review</option>
+                <option value="other">Other...</option>
+            </select>
+        </div>
+        <div class="form-control">
+          <label for="message">Your message </label>
+            <textarea id="message" name="message" placeholder="Hello...." required></textarea>
+        </div>
+        <div>
+            <button type="submit">Send my message</button>
+        </div>
+    </form>
+</div>
+<a href="javascript:void(0);" id="backToTopButton" title="Back to Top" style="display: none;">↑</a>
+<footer class="main-override">
+  <div>
+      <h1>Contact Us.</h1>
+      <p>
+        At Notch, we're here to help and hear from you.</br>
+        Your feedback, questions, and inquiries are</br>
+        important to us. Feel free to get in touch using</br>
+        the following methods:</p>
+      <!--<img src="images/destination.png" alt="location" width="20" height="30" style="margin-right: 50%;">-->
+  </div>
+
+  <div>
+      <div class="contact-row">
+        <div class="contact-box">
+          <p><b>Address</b></br>
+              Notch Headquarters</br>
+              456 Inclusivity Street</br>
+              Accessibility Town, Mapleland M1A 2B3</br>
+              Canada</p>
+        </div>
+        <div class="contact-box">
+          <p><b>General Inquiries</b></br>
+                Toll-Free: 225-587-3733</br>
+                Phone: 225-587-4373</br>
+                Fax: 225-587-7263</br>
+                Email: info@notchco.com</p>
+        </div>
+        <div class="contact-box">
+          <p><b>Social Media</b></br>
+              Instagram: @notchco</br>
+              Facebook: @notch.co</br>
+              Twitter: @notch_co</p>
+        </div>
+      </div>
+  </div>
+</footer>
+</body>
+</html>
+  <!-- <script>
+    const acc = document.getElementsByClassName("accordion");
+    
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+  </script> -->
